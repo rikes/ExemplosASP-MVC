@@ -13,7 +13,7 @@ namespace ExemploValidacao.Models
 
         [StringLength(50,MinimumLength = 5, ErrorMessage = "A Observação deve ter entre 5 a 50 caracteres")]
         public string Observacao { get; set; }
-
+         
         //[RegularExpression(@)]
         public string Email { get; set; }
 
