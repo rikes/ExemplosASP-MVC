@@ -1,0 +1,25 @@
+﻿
+@{
+    ViewBag.Title = "Hello World";
+}
+<h2>@ViewBag.Title.</h2>
+<h3>@ViewBag.Message</h3>
+
+<table>
+    <tr>Primeira informação
+        <td> Segunda informção</td>
+        <td> Tabelinha fudida</td>
+    </tr>
+</table>
+
+<article> Este artigo foi baseado:
+    Em linguagens como PHP, quem não usa framework, raramente irá usar MVC, mas isto não é a questão da linguagem.
+
+    É quase impossível criar um MVC (no seu caso parece que é um MVC e Rotas) com 3 arquivos no asp.net mvc como você pediu, pois é necessário várias configurações, como um exemplo o arquivo Web.config e todos esses arquivos ao qual você se refere, são partes das configurações necessárias para que tudo funcione e você não é obrigado a entender um por um.
+
+    Portanto o mínimo possível ainda sim irá gerar ainda sim muitos arquivos (ressaltando: você não é obrigado a entender o significado de cada um deles).
+
+    Vou ser sincero eu até entendo você, sou muito parecido, gosto de estar no "controle", evitar deixar que IDEs façam o meu trabalho (acho que é assim que você pensa), mas infelizmente parece não haver material suficientemente claro de como criar o seu próprio MVC (que trabalhe com "rotas" é claro), a principio editar o arquivo HomeController.cs seria o mais correto, porém se você necessita realmente de alternativas, acredito que isto possa lhe ajudar:
+    
+    </article>
+<p>@DateTime.Now.Hour : @DateTime.Now.Minute </p> 
