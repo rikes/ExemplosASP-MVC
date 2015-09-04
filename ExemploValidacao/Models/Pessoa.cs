@@ -20,7 +20,7 @@ namespace ExemploValidacao.Models
         [Range(18, 50, ErrorMessage = "A idade da pessoa deve ser entre 18 e 50 anos")]
         public int Idade { get; set; }
 
-        [Required(ErrorMessage = "A senha deve ser informada")]
+        [Required(ErrorMessage = "A senha deve ser informada")] 
         public string Senha { get; set; }
 
         [Compare("Senha", ErrorMessage = "A senha não confere")]
