@@ -1,0 +1,34 @@
+﻿@model GetPostModel.Models.Pessoa
+@{
+    ViewBag.Title = "PostGet";
+}
+<h1>Inicio Post and GET </h1>
+
+<form action="Lista" method="post">
+    <fieldset>
+        <legend> Cadastro de Pessoa</legend>
+        <div>
+            @Html.LabelFor(x => x.PessoaId)
+        </div>
+        <div>
+            @Html.EditorFor(x => x.PessoaId)
+        </div>
+
+        <div>
+            <label for="Nome">Nome </label>
+        </div>
+        <div>
+            <input type="text"  value="@Model.Nome" id="Nome" name="Nome" />
+        </div>
+
+        <div>
+            @Html.LabelFor(x => x.Senha)
+        </div>
+        <div>
+            @Html.PasswordFor(x => x.Senha)  
+        </div>
+        <p><input type="submit" value="Enviar"/></p>
+    </fieldset>
+
+</form>
+
